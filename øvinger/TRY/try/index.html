@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DAT310 Assignment 4</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="data.js"></script>
+        <style>
+            
+        
+    </style>
+    </head>
+
+    <body onload="displayData()">
+        <div id="main">
+            <div id="header">
+                <input type="text" placeholder="Search..."
+                    onkeyup="searchFunction()" />
+                <select name="sort" id="sort"
+                    onchange="sortContacts();">
+                    <option value="Name">Name</option>
+                    <option value="Phone">Telephone</option>
+                    <option value="Email">Email</option>
+                </select>
+                <button type="button" onclick="inputs.style.display = ''">Add
+                    Contact</button>
+                <button type="button">Sittings</button>
+            </div>
+            <div id="inputs" style="display:none;">
+                <fieldset>
+                <legend>Add entry</legend>
+                <form action="index.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <button type="button" id="add"
+                        onclick="addContact()">Add</button>
+                    <button onclick="updateContact(0)">Edit</button>
+                </form>
+            </fieldset>
+            </div>
+
+            
+                <fieldset>
+                <div id="Contacts"></div>
+                <legend>Contacts</h2>
+                </fieldset>
+            </div>
+        </div>
+
+    </body>
+
+</html>

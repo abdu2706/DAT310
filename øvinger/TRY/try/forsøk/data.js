@@ -1,0 +1,10 @@
+contacts = new Array();
+contacts.push(new Entry("Don John", "12-322-622", "don.john@ymail.com"));
+contacts.push(new Entry("Elizabeth Westland", "66-112-312", "e47wl@outlook.com"));
+contacts.push(new Entry("John Smith", "12-345-678", "john.smith@gmail.com"));
+contacts.push(new Entry("Kevin Magnussen", "+31 997-11-21", "kevinrulez@noemail.com"));
+contacts.push(new Entry("Mia Wallace", "123-456-789", "mia_wallace@hotmail.co.uk"));
+contacts.push(new Entry("Vincent Vega", "123-456-789", "vinnie_vega@aol.com"));
+contacts.push(new Entry("Jules Winnfield", "123-456-789", "jules_winfield@msn.com"));
+contacts.push(new Entry("Marsellus Wallace", "123-456-789", "marseille@yahoo.fr"));
+contacts.push(new Entry("Butch Coolidge", "123-456-789", "butch_coolidge@hotmail.com"));

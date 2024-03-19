@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phone book</title>
+        <script src="data.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="header">
+            <div id="bar">
+                <div id="search">
+                    <input type="text" id="searchInput"
+                        onkeyup="searchFunction()"
+                        placeholder="Search for names..">
+                </div>
+                <div id="add">
+                    <button onclick="show()">Add</button>
+                </div>
+                <div id="sort">
+                    <select name="sort" id="sort"
+                        onchange="sortContacts();displayEntries();">
+                        <option value="name">Name</option>
+                        <option value="tel">Telephone</option>
+                        <option value="email">Email</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+        <div id="main">
+            <div id="input" style="display:none;">
+                <fieldset>
+                    <legend>Add contact:</legend><br>
+                    <form id="inputForm" ,
+                        style="display: inline-flexbox; flex-direction: column;">
+                        <label for="name">Name:</label>
+                        <input type="text" id="nameInput"
+                            placeholder="Name"><br>
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phoneInput"
+                            placeholder="Phone"><br>
+                        <label for="email">Email:</label>
+                        <input type="text" id="emailInput"
+                            placeholder="Email"><br>
+                        <button type="button"
+                            onclick="addContact()">Add</button>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+        <div id="contacts">
+            <script>
+            contacts = new Array();
+                contacts.push(new Entry("Don John", "12-322-622", "don.john@ymail.com"));
+                contacts.push(new Entry("Elizabeth Westland", "66-112-312", "e47wl@outlook.com"));
+                contacts.push(new Entry("John Smith", "12-345-678", "john.smith@gmail.com"));
+                contacts.push(new Entry("Kevin Magnussen", "+31 997-11-21", "kevinrulez@noemail.com"));
+                contacts.push(new Entry("Mia Wallace", "123-456-789", "mia_wallace@hotmail.co.uk"));
+                contacts.push(new Entry("Vincent Vega", "123-456-789", "vinnie_vega@aol.com"));
+                contacts.push(new Entry("Jules Winnfield", "123-456-789", "jules_winfield@msn.com"));
+                contacts.push(new Entry("Marsellus Wallace", "123-456-789", "marseille@yahoo.fr"));
+                contacts.push(new Entry("Butch Coolidge", "123-456-789", "butch_coolidge@hotmail.com"));
+</script>
+        </div>
+    </body>
+
+</html>

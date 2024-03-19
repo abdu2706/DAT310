@@ -1,0 +1,52 @@
+#inputs{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: 20px;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: 20px;
+}
+
+#inputs button{
+    border: 1px solid black;
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+}
+#inputs button:hover{
+    background-color: darkblue;
+}
+#inputs input{
+    width: 20%;
+    padding: 5PX;
+    margin-bottom: 10px;
+}
+#liste li{
+    display:block;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+#liste h3{
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+}

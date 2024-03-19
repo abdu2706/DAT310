@@ -2,26 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercise Changing text</title>
+    <style>
+        #mydiv {
+            width: 300px;
+            height: 50px;
+            line-height: 50px;  /* for vertical alignment of text */
+            text-align: center;
+            border: 1px solid black;
+            background-color: yellow;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+    </style>
+    <script>
+        function settext(element,text){
+            element.innerHTML = text
+        }
+        window.onload = function(){
+            let mydiv = document.getElementById("mydiv");
+            mydiv.onmouseover = function(){settext(mydiv,"Can I help you?")}
+            mydiv.onmouseout = function(){settext(this,"Hello world!")}
+            mydiv.onload = alert('xxxxxxxxxxxxxxxxx')
+        }
+    </script>
 </head>
 <body>
-    
-    <form action="">
-        How: <input type="radio">
-        <input type="radio" name="man"  >        <input type="radio">
-        <input type="radio">        <input type="radio">
-        <input type="radio">        <input type="radio">
-        <input type="radio">
-        Password: <input type="password" name="em" id="email" maxlength="2" >
-        <input type="password" name="pw" pattern=".{8,}" title="Eight or more characters" />
-        <input type="password" name=“pw" pattern=“.{8,}“ title=“Eight or more characters” />
-
-        </div>
-
-        <input type="password" name="pw" pattern=".{8,}" title="Eight or more characters" />
-        Quantity:
-        <input type="number" name="points" size="3" min="0" max="100" step="10" value="30">
-    </form>
+<div id="mydiv" >Hello world</div>
 </body>
 </html>

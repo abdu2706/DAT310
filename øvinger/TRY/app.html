@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://unpkg.com/vue-router@4/dist/vue-router.global.js"></script>
+
+</head>
+<body>
+  <div id="app">
+    <router-view>
+      <router-link to="/home">Home</router-link>
+      <router-link to="/about">About</router-link>
+    </router-view>
+  </div>
+</body>
+</html>
+<script>
+  const Home = { template: '<div>Home</div>' }
+  const About = { template: '<div>About</div>' }
+
+  const routes = [
+    { path: '/home', component: Home },
+    { path: '/about', component: About }
+  ]
+
+  const router = VueRouter.createRouter({
+    history: VueRouter.createWebHistory(),
+    routes
+  })
+
+  const app = Vue.createApp({})
+  app.use(router)
+  app.mount('#app')
+
+</script>
+
