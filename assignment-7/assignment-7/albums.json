@@ -1,0 +1,39 @@
+[
+    {
+        "album_id": 1,
+        "artist": "Coldplay",
+        "title": "A Rush of Blood to the Head",
+        "cover_image": "album1_covers.png"
+    },
+    {
+        "album_id": 2,
+        "artist": "Guns N' Roses",
+        "title": "Use Your Illusion I",
+        "cover_image": "album2_cover.jpg"
+    },
+    {
+        "album_id": 3,
+        "artist": "Coldplay",
+        "title": "A Rush of Blood to the Head",
+        "cover_image": "album3_covers.png"
+    },
+    {
+        "album_id": 4,
+        "artist": "Guns N' Roses",
+        "title": "Use Your Illusion I",
+        "cover_image": "album4_cover.png"
+    },
+    {
+        "album_id": 5,
+        "artist": "Coldplay",
+        "title": "A Rush of Blood to the Head",
+        "cover_image": "album5_covers.png"
+    },
+    {
+        "album_id": 6,
+        "artist": "Guns N' Roses",
+        "title": "Use Your Illusion I",
+        "cover_image": "album6_cover.jpeg"
+    }
+
+]

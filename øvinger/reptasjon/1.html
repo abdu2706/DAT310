@@ -6,10 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-<div id="green_div" onclick="handle('blue');"></div>
+
 <script>
-    let greenDiv = document.getElementById("green_div");
-        greenDiv.onclick = function(){ handle("hello");}
+document.write("<ul>");
+for(let i=1; i<11;i++){
+    document.write("<li>");
+    if(i==7){
+        document.write("seven")
+    }
+    else{
+        document.write(i)
+}
+document.write("</li>");
+}
+document.write("</ul>");
 </script>
 </body>
 </html>
