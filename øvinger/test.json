@@ -1,0 +1,15 @@
+{
+    "string": "Hello, World!",
+    "nummber": 100,
+    "objekt": {
+        "EG": "Giza",
+        "KSA": "Riyadh"
+    },
+    "array": [
+        "HTML",
+        "CSS",
+        "JS"
+    ],
+    "boolean": true,
+    "null": null
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <div class="container mt-5 text-center" >
+<div id="app">
+<label class="form-label">hour</label>
+<input type="number" v-model="hour" placeholder="Enter hour" class="form-label">
+<label class="form-label">minute</label>
+<input type="number" v-model="minute" class="form-label">
+<label class="form-label">second</label>
+<input type="number" v-model="second" class="form-label">
+</div>
+</div>
+
+
+
+
+<script>
+    var vm = new Vue({
+    el: '#app',
+    data:{
+        hour:0,
+        minute:0,
+        second:0,
+    },
+    methods: {
+
+    },
+    computed: {
+
+    },
+    watch:{
+        hour:function(v){
+            this.minute=v*60; 
+            console.log("h");
+        },
+        minute:function(v){
+            this.hour=v/60;
+            this.second=v*60;
+            console.log("minute");
+        },
+        second:function(v){
+            this.minute=v/60;
+            console.log("second");
+        }
+    }
+})
+</script>
+</body>
+</html>

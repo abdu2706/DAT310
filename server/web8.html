@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.facebook.com" method="get">
+        <input type="text" name="q" value="">
+        <input type="submit" value="Go" onclick="return validate()">
+    </form>
+
+    <script>
+        function validate(){
+            var x = document.forms[0].elements[0].value;
+            if(x == ""){
+                alert("Please enter a search term");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
+
+
+
